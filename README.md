@@ -1,2 +1,2 @@
 # Cursos
- Exercícios e conteúdo dos cursos em andamento/feitos
+ Exercícios e conteúdos dos cursos em andamento/feitos
