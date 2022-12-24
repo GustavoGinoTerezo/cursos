@@ -23,4 +23,5 @@ public class Exercicio_02 {
         System.out.println("#   #  #   #  ##");
         System.out.println(" ###   #####  ##");
 
+    }
 }
