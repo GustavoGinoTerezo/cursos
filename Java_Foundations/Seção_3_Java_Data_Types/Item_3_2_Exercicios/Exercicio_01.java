@@ -5,13 +5,14 @@ import javax.swing.JOptionPane;
 
 public class Exercicio_01 {
     
-    /*
+    
     public static void somaOvosV1(){
 
     int chickenCount = Integer.parseInt(JOptionPane.showInputDialog("Qual o número de galinhas: "));
-    int newChickenCount = chickenCount+1;
+    int newChicken = Integer.parseInt(JOptionPane.showInputDialog("Qual o número de galinhas que foram adicionadas: "));;
+    int newChickenCount = chickenCount+newChicken;
     int endChickenCount = newChickenCount/2;
-    int eggsPerChicken = 5;
+    int eggsPerChicken = Integer.parseInt(JOptionPane.showInputDialog("Qual a quantidade de ovos por galinhas: "));;
     
     int segunda = chickenCount*eggsPerChicken;
     int terça = newChickenCount*eggsPerChicken;
@@ -29,5 +30,5 @@ public class Exercicio_01 {
         Exercicio_01.somaOvosV1();
     
     }
-    */
+    
 }
