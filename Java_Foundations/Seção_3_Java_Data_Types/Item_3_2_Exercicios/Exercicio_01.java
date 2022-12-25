@@ -4,6 +4,13 @@ import javax.swing.JOptionPane;
 
 public class Exercicio_01 {
 
+    /*
+     * PROGRAMA USADO PARA FAZER A SOMA DOS OVOS DE UM GALINHEIRO A PARTIR DA QUANTIDADE
+     * DE GALINHAS QUE O GALINHEIRO POSSUI E A QUANTIDADE DE OVOS QUE SÃO BOTADOS POR GA-
+     * LINHA, E ALÉM DISSO, NO MEIO DESSE PROCESSO, É ADICIONADO UMA NOVA QUANTIDADE DE 
+     * GALINHAS NO GALINHEIRO.
+     */
+
     public static void somaOvos() {
 
         int chickenCount = Integer.parseInt(JOptionPane.showInputDialog("Qual o número de galinhas: "));
