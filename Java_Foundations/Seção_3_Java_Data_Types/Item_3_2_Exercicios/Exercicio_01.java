@@ -1,6 +1,5 @@
 package Java_Foundations.Seção_3_Java_Data_Types.Item_3_2_Exercicios;
 
-import javax.sound.sampled.SourceDataLine;
 import javax.swing.JOptionPane;
 
 public class Exercicio_01 {
