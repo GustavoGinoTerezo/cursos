@@ -9,6 +9,6 @@ def numero_primo(num):
         return True
 
 
-for i in range(90, 100):
+for i in range(2, 100):
     if numero_primo(i):
         print(i, end=" ")
