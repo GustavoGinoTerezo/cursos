@@ -19,6 +19,7 @@ def prova_ano_bissexto(ano):
     else:
         return print("O ano não é bissexto")
 
+
 # LAÇO DE REPETIÇÃO WHILE ABAIXO PARA REPETIR A AÇÃO DO PROGRAMA
 condiçao = True
 
