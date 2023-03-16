@@ -12,3 +12,4 @@ def numero_primo(num):
 for i in range(2, 100):
     if numero_primo(i):
         print(i, end=" ")
+print()
