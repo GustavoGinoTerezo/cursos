@@ -1,0 +1,26 @@
+.menu {
+  padding: 10px 5px;
+  width: 100px;
+  color: #fff;
+  background-color: rgb(47, 57, 153);
+  border: 1px solid #555;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px ;
+}
+
+.title{
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+
+.example-full-width {
+
+  width: 300px;
+  border-radius: 1px;
+  text-align: center;
+  margin-left:17px ;
+  border-radius: 5px;
+}
+

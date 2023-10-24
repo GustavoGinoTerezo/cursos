@@ -1,0 +1,33 @@
+<!--Título-->
+<h1 text-align: center>Solicitação ao Banco de Dados</h1>
+<!--================================================================-->
+<!--Inputs-->
+<mat-form-field appearance="fill">
+  <mat-label>Id</mat-label>
+  <input matInput [(ngModel)]="id">
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Nome</mat-label>
+  <input matInput [(ngModel)]="nome">
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Email</mat-label>
+  <input matInput [(ngModel)]="email">
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Senha</mat-label>
+  <input matInput [(ngModel)]="senha">
+</mat-form-field>
+  <input type="file" (change)="selecionarImagem($event)">
+<br>
+<!--================================================================-->
+<!--Botões-->
+<section>
+  <div class="example-button-row">
+    <button mat-stroked-button (click)="pegarDado()">Pesquisar</button>
+    <button mat-stroked-button color="primary" (click)="criarDado()">Cadastrar</button>
+    <button mat-stroked-button color="warn" (click)="atualizarDado()">Atualizar</button>
+    <button mat-stroked-button color="accent" (click)="deletarDado()">Excluir</button>
+  </div>
+</section>
+<!--================================================================-->

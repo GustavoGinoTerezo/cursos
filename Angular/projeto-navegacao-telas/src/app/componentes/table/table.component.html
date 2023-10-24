@@ -1,0 +1,171 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<mat-tab-group>
+<!-- FIRST -->
+  <mat-tab label="Cadastro">
+<!--================================================================-->
+<!--Inputs-->
+<!--<mat-form-field appearance="fill" class="margem">
+  <mat-label>Id</mat-label>
+  <input matInput [(ngModel)]="id">
+</mat-form-field>-->
+<br>
+<mat-form-field appearance="fill" class="margem-first">
+  <mat-label>Nome</mat-label>
+  <input matInput [(ngModel)]="nome">
+</mat-form-field>
+<br>
+<mat-form-field appearance="fill" class="margem-first">
+  <mat-label>Email</mat-label>
+  <input matInput [(ngModel)]="email">
+</mat-form-field>
+<br>
+<mat-form-field appearance="fill" class="margem-first">
+  <mat-label>Senha</mat-label>
+  <input matInput [(ngModel)]="senha">
+</mat-form-field>
+<br>
+  <input type="file" class="arquivo-first" (change)="selecionarImagem($event) ">
+<br>
+<!--================================================================-->
+<!--Botões-->
+<section>
+<br>
+  <div class="example-button-row">
+    <!--<button mat-stroked-button (click)="pegarDado()">Pesquisar</button>-->
+    <button mat-stroked-button color="primary" (click)="criarDado()">Cadastrar</button>
+    <!--<button mat-stroked-button color="warn" (click)="atualizarDado()">Atualizar</button>-->
+    <!--<button mat-stroked-button color="accent" (click)="deletarDado()">Excluir</button>-->
+  </div>
+</section>
+<!--================================================================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mat-tab>
+
+  <mat-tab label="Cards">
+
+  <app-card></app-card>
+
+</mat-tab>
+ <!--================================================================-->
+
+  <mat-tab label="Pesquisa e Atualização">
+  <!--================================================================-->
+  <!--Inputs-->
+  <br>
+  <mat-form-field appearance="fill" class="margem-third">
+    <mat-label>Id</mat-label>
+    <input matInput [(ngModel)]="idPesquisar">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill" class="margem-third">
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="nomePesquisar">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill" class="margem-third">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="emailPesquisar">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill" class="margem-third">
+    <mat-label>Senha</mat-label>
+    <input matInput [(ngModel)]="senhaPesquisar">
+  </mat-form-field>
+  <br>
+    <input type="file" class="arquivo-third" (change)="selecionarImagem($event) ">
+  <br>
+  <!--================================================================-->
+  <!--Botões-->
+  <br>
+  <section>
+    <div class="margem-div-third">
+      <button class="botao-third" mat-stroked-button (click)="pegarDado()">Pesquisar</button>
+      <!--<button mat-stroked-button color="primary" (click)="criarDado()">Cadastrar</button>-->
+      <button class="botao-third" mat-stroked-button color="warn" (click)="atualizarDado()">Atualizar</button>
+      <!--<button mat-stroked-button color="accent" (click)="deletarDado()">Excluir</button>-->
+    </div>
+  </section>
+  <!--================================================================-->
+  </mat-tab>
+
+</mat-tab-group>
+
+
+
