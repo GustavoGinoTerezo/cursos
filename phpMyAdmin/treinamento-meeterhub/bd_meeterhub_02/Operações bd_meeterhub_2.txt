@@ -1,0 +1,42 @@
+AUTOR
+INSERT INTO `autor`(`nome`, `endereco`, `URL`) VALUES ('Teste','Rua teste, 123','Teste')
+SELECT * FROM `autor`
+UPDATE `autor` SET `nome`='Teste2',`endereco`='Rua teste2, 234',`URL`='Teste2' WHERE 1
+DELETE FROM `autor` WHERE 1
+
+EDITORA
+INSERT INTO `editora`(`nome`, `endereco`, `telefone`, `URL`) VALUES ('Teste','Rua teste, 123', '12345678', 'Teste')
+SELECT * FROM `editora`
+UPDATE `editora` SET `nome`='Teste2',`endereco`='Rua teste2, 234',`URL`='Teste2' WHERE 1
+DELETE FROM `editora` WHERE 1
+
+LIVRO
+INSERT INTO `livro`(`codigo_editora`, `codigo_autor`, `ISBN`, `titulo`, `ano`, `preco`) VALUES ('1','2','Teste','Testando','1990','20.99')
+SELECT * FROM `livro`
+UPDATE `livro` SET `codigo_editora`='1',`codigo_autor`='2',`ISBN`='Teste2',`titulo`='Testando2',`ano`='1995',`preco`='21.99' WHERE 1;
+DELETE FROM `livro` WHERE 1
+
+DEPOSITO
+INSERT INTO `deposito`(`codigo_livro`, `endereco`, `telefone`) VALUES ('3','Rua testando, 2456','936129361');
+SELECT * FROM `deposito`
+UPDATE `deposito` SET `codigo_livro`='3',`endereco`='Rua testando, 8976348',`telefone`='9074982193481' WHERE 1
+DELETE FROM `deposito` WHERE 1
+
+CLIENTE
+INSERT INTO `cliente`(`email`, `nome`, `endereco`, `telefone`) VALUES ('teste@teste.com','Teste','AV. teste, 896418','(11)9847518267')
+SELECT * FROM `cliente`
+UPDATE `cliente` SET `email`='teste2@teste.com',`nome`='Teste Teste',`endereco`='Rua teste, 86317',`telefone`='631873821' WHERE 1
+DELETE FROM `cliente` WHERE 1
+
+CARRINHO_COMPRAS
+INSERT INTO `carrinho_compras`(`codigo_cliente`) VALUES ('1')
+SELECT * FROM `carrinho_compras`
+UPDATE `carrinho_compras` SET `codigo_cliente`='2' WHERE 1 (Observação, para atualizar, é necessário haver o codigo_cliente, pois esse campo é um FK)
+DELETE FROM `carrinho_compras` WHERE 1
+
+ITENS_CARRINHO
+INSERT INTO `itens_carrinho`(`codigo_carrinho`, `codigo_livro`) VALUES ('1','3')
+SELECT * FROM `itens_carrinho`
+UPDATE `itens_carrinho` SET `codigo_carrinho`='2',`codigo_livro`='3' WHERE 1 (Observação, para atualizar, é necessário haver o codigo_carrinho, pois esse campo é um FK)
+DELETE FROM `itens_carrinho` WHERE 1
+
