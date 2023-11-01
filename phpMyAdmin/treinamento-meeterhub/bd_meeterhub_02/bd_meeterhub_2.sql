@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/10/2023 às 01:11
+-- Tempo de geração: 01/11/2023 às 01:59
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.0.28
 
@@ -81,7 +81,8 @@ CREATE TABLE `deposito` (
   `id_deposito` int(5) NOT NULL,
   `endereco` varchar(20) DEFAULT NULL,
   `telefone` varchar(20) DEFAULT NULL,
-  `id_livro` int(5) DEFAULT NULL
+  `id_livro` int(5) DEFAULT NULL,
+  `quantidade` int(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -107,7 +108,8 @@ CREATE TABLE `editora` (
 CREATE TABLE `itens_carrinho` (
   `id_item` int(5) NOT NULL,
   `id_carrinho` int(5) DEFAULT NULL,
-  `id_livro` int(5) DEFAULT NULL
+  `id_livro` int(5) DEFAULT NULL,
+  `quantidade` int(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -183,6 +185,58 @@ ALTER TABLE `itens_carrinho`
 ALTER TABLE `livro`
   ADD PRIMARY KEY (`id_livro`),
   ADD KEY `id_editora` (`id_editora`);
+
+--
+-- AUTO_INCREMENT para tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `autor`
+--
+ALTER TABLE `autor`
+  MODIFY `id_autor` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `autores`
+--
+ALTER TABLE `autores`
+  MODIFY `id_autores` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `carrinho_compras`
+--
+ALTER TABLE `carrinho_compras`
+  MODIFY `id_carrinho` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `cliente`
+--
+ALTER TABLE `cliente`
+  MODIFY `id_cliente` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `deposito`
+--
+ALTER TABLE `deposito`
+  MODIFY `id_deposito` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `editora`
+--
+ALTER TABLE `editora`
+  MODIFY `id_editora` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `itens_carrinho`
+--
+ALTER TABLE `itens_carrinho`
+  MODIFY `id_item` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `livro`
+--
+ALTER TABLE `livro`
+  MODIFY `id_livro` int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restrições para tabelas despejadas
