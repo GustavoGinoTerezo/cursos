@@ -1,5 +1,5 @@
+import { UserDto, UpdateUserDto } from '../dto/user.dto';
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import { UpdateUserDto, UserDto } from '../dto/user.dto';
 
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -10,8 +10,12 @@ export class UserService {
 
     constructor(
         @InjectRepository(UserEntity)
-        private userRepository: Repository<UserEntity>
-    ){}
+        private userRepository: Repository<UserEntity>,
+    ) {}
+
+    async findAll(): Promise<UserEntity[]> {
+        return await this.userRepository.find({ relations: ['filiacoes']});
+    }
 
     
 
