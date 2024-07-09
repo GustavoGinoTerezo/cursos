@@ -2,5 +2,5 @@
     { "path": "/",        "label": "Home",     "component": "home" },
     { "path": "/sobre",   "label": "Sobre",    "component": "about" },
     { "path": "/servico", "label": "Serviços", "component": "services" },
-    { "path": "/contato", "label": "Contato",  "component": "contact" }
+    { "path": "/contato", "label": "Contato",  "component": "contactPages" }
   ]

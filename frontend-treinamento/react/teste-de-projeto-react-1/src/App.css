@@ -1,25 +1,26 @@
-html, body {
+html,
+body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-  }
-  
-  header {
+}
+
+header {
     background-color: #333;
     padding: 20px 0;
     color: white;
-    text-align: center; 
-  }
-  
-  .displayFlex {
+    text-align: center;
+}
+
+.displayFlex {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
-  }
-  
-  footer {
+    min-height: 100vh;
+}
+
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -28,32 +29,31 @@ html, body {
     width: 100%;
     color: white;
     text-align: center;
-  }
-  
-  nav {
+}
+
+nav {
     margin-top: auto;
     background-color: #f0e8e8;
     padding: 20px;
     width: 200px;
     height: 100%;
     overflow-y: auto;
-  }
-  
-  main {
-    display: flex; 
+}
+
+main {
+    display: flex;
     position: relative;
     flex: 1;
-    padding-bottom: 50px; 
-  }
-  
-  article {
+    padding-bottom: 50px;
+}
+
+article {
     flex-grow: 1;
-    background-color: #fff; 
+    background-color: #fff;
     padding: 20px;
-    overflow-y: auto; 
-  }
-  
-  nav a {
+    overflow-y: auto;
+}
+
+nav a {
     display: block;
-  }
-  
+}

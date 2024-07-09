@@ -1,0 +1,26 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: calc(100vh - 350px);
+}
+
+.login-paper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 16px;
+    padding: 1rem;
+    width: 300px;
+}
+
+.login-field {
+    border-radius: 8px;
+}
+
+.login-button {
+    margin-top: 16px;
+    border-radius: 8px;
+}
